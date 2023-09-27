@@ -1,9 +1,7 @@
 import './App.css';
-import Nav from './Nav';
-import Foot from './Foot';
-import Home from './Home';
-import Content from './Content';
-import { Routes, Route } from 'react-router-dom';
+import Nav from './Components/Nav';
+import Foot from './Components/Foot';
+import Fetching from './Components/Fetching';
 
 function App() {
 
@@ -11,10 +9,7 @@ function App() {
   return (
     <div >
       <Nav/>
-      <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/content' element={<Content/>}></Route>
-      </Routes>
+      <Fetching/>
       <Foot/>
       </div>
   );  
