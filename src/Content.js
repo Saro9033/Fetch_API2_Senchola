@@ -33,16 +33,16 @@ const Content = () => {
   )
 
   return ( 
-    <div className='container'>
+    <div className='container mt-5 mb-5'>
       {isLoad && <h2 className='text-center mt-5'>Loading...</h2>}
       {error && <h2 className='text-center mt-5'>`Error: ${error}`</h2>}
 
     {!isLoad && !error && 
 
-    <ul className='row'>
+    <div className='row'>
       {list.map(item => {
     return  <div key={item.id}  className="col-12 col-lg-4 col-md-6 p-4 " >
-        <div className="card rounded-4 d-flex align-items-center shadow"  >
+        <div className="card rounded-4 shadow"  >
           <img className="rounded-circle p-1 card-img-top" style={{width:'90px'}} src={Profile} alt={item.id}/>
           <div className="card-body">
             <h5 className="card-title">{item.name}</h5>
@@ -55,7 +55,7 @@ const Content = () => {
         </div>
       </div>
       })}
-    </ul> } 
+    </div> } 
     </div>
   )
 }
