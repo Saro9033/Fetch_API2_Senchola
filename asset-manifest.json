@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Fetch_API2_Senchola/static/css/main.935666c4.css",
+    "main.js": "/Fetch_API2_Senchola/static/js/main.af48a90b.js",
+    "static/js/787.cf088bfa.chunk.js": "/Fetch_API2_Senchola/static/js/787.cf088bfa.chunk.js",
+    "index.html": "/Fetch_API2_Senchola/index.html",
+    "main.935666c4.css.map": "/Fetch_API2_Senchola/static/css/main.935666c4.css.map",
+    "main.af48a90b.js.map": "/Fetch_API2_Senchola/static/js/main.af48a90b.js.map",
+    "787.cf088bfa.chunk.js.map": "/Fetch_API2_Senchola/static/js/787.cf088bfa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.935666c4.css",
+    "static/js/main.af48a90b.js"
+  ]
+}
