@@ -11,17 +11,21 @@ function TodoAccordions() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(
-          'https://jsonplaceholder.typicode.com/todos'
-        );
-        const groupedTodos = response.data.reduce((acc, todo) => {
+        const response = await axios.get('https://jsonplaceholder.typicode.com/todos');
+        const todos = response.data;
+        const groupedTodos = {};
+      
+        for (const todo of todos) {
           const userId = todo.userId;
-          if (!acc[userId]) {
-            acc[userId] = [];
+          console.log("userID:", userId);
+          console.log("groupedTodos[userId]:", groupedTodos[userId]);
+
+          if (!groupedTodos[userId]) {
+            groupedTodos[userId] = [];
+            console.log("IF",  groupedTodos[userId])
           }
-          acc[userId].push(todo);
-          return acc;
-        }, {});
+          groupedTodos[userId].push(todo);
+        }
 
         setTodosByUser(groupedTodos);
       } catch (error) {
